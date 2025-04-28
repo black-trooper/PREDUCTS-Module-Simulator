@@ -1,0 +1,423 @@
+[
+    {
+        "id": "mesh-cable-holder",
+        "name": "Mesh Cable Holder",
+        "type": "tray",
+        "rotate": false,
+        "install": [
+            {
+                "width": 960,
+                "height": 85,
+                "holes": [
+                    {
+                        "x": 230,
+                        "y": -30,
+                        "width": 9,
+                        "height": 6
+                    },
+                    {
+                        "x": 650,
+                        "y": -30,
+                        "width": 9,
+                        "height": 6
+                    },
+                    {
+                        "x": 230,
+                        "y": 120,
+                        "width": 9,
+                        "height": 6
+                    },
+                    {
+                        "x": 650,
+                        "y": 120,
+                        "width": 9,
+                        "height": 6
+                    }
+                ]
+            },
+            {
+                "width": 960,
+                "height": 85,
+                "holes": [
+                    {
+                        "x": 230,
+                        "y": 36,
+                        "width": 9,
+                        "height": 6
+                    },
+                    {
+                        "x": 650,
+                        "y": 36,
+                        "width": 9,
+                        "height": 6
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "drawer-mini",
+        "name": "Drawer Mini",
+        "type": "tray",
+        "install": [
+            {
+                "width": 428,
+                "height": 237,
+                "holes": [
+                    {
+                        "x": 10,
+                        "y": 45,
+                        "width": 15,
+                        "height": 5
+                    },
+                    {
+                        "x": 408,
+                        "y": 45,
+                        "width": 15,
+                        "height": 5
+                    },
+                    {
+                        "x": 10,
+                        "y": 195,
+                        "width": 15,
+                        "height": 5
+                    },
+                    {
+                        "x": 408,
+                        "y": 195,
+                        "width": 15,
+                        "height": 5
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "drawer-three",
+        "name": "Drawer Three",
+        "type": "tray",
+        "crossBeam": true,
+        "install": [
+            {
+                "width": 486,
+                "height": 271,
+                "holes": [
+                    {
+                        "x": 10,
+                        "y": 65,
+                        "width": 6,
+                        "height": 50
+                    },
+                    {
+                        "x": 466,
+                        "y": 65,
+                        "width": 6,
+                        "height": 50
+                    },
+                    {
+                        "x": 10,
+                        "y": 215,
+                        "width": 6,
+                        "height": 50
+                    },
+                    {
+                        "x": 466,
+                        "y": 215,
+                        "width": 6,
+                        "height": 50
+                    }
+                ]
+            },
+            {
+                "width": 412,
+                "height": 271,
+                "holes": [
+                    {
+                        "x": 28,
+                        "y": 65,
+                        "width": 6,
+                        "height": 50
+                    },
+                    {
+                        "x": 380,
+                        "y": 65,
+                        "width": 6,
+                        "height": 50
+                    },
+                    {
+                        "x": 28,
+                        "y": 215,
+                        "width": 6,
+                        "height": 50
+                    },
+                    {
+                        "x": 380,
+                        "y": 215,
+                        "width": 6,
+                        "height": 50
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mount-studio",
+        "name": "Mount for Mac Studio",
+        "type": "mount",
+        "rotate": 90,
+        "install": [
+            {
+                "width": 203,
+                "height": 203,
+                "holes": [
+                    {
+                        "x": 23,
+                        "y": 6,
+                        "width": 6,
+                        "height": 40
+                    },
+                    {
+                        "x": 173,
+                        "y": 6,
+                        "width": 6,
+                        "height": 40
+                    },
+                    {
+                        "x": 23,
+                        "y": 156,
+                        "width": 6,
+                        "height": 40
+                    },
+                    {
+                        "x": 173,
+                        "y": 156,
+                        "width": 6,
+                        "height": 40
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mount-mac-mini2",
+        "name": "Mount for Mac mini 2",
+        "type": "mount",
+        "install": [
+            {
+                "width": 131,
+                "height": 127,
+                "holes": [
+                    {
+                        "x": 9,
+                        "y": 18,
+                        "width": 6,
+                        "height": 89
+                    },
+                    {
+                        "x": 115,
+                        "y": 18,
+                        "width": 6,
+                        "height": 89
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mount-switch",
+        "name": "Mount for Switch",
+        "type": "mount",
+        "rotate": 90,
+        "install": [
+            {
+                "width": 55.7,
+                "height": 214,
+                "holes": [
+                    {
+                        "x": 8,
+                        "y": 12,
+                        "width": 6,
+                        "height": 40
+                    },
+                    {
+                        "x": 8,
+                        "y": 162,
+                        "width": 6,
+                        "height": 40
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "mount-ps5",
+        "name": "Mount for PS5",
+        "type": "mount",
+        "rotate": 90,
+        "crossBeam": true,
+        "install": [
+            {
+                "width": 118,
+                "height": 210,
+                "holes": [
+                    {
+                        "x": 8,
+                        "y": 12.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 42.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 162.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 192.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 88,
+                        "y": 12.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 88,
+                        "y": 42.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 88,
+                        "y": 162.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 88,
+                        "y": 192.5,
+                        "width": 24,
+                        "height": 5
+                    }
+                ]
+            },
+            {
+                "width": 156,
+                "height": 210,
+                "holes": [
+                    {
+                        "x": 8,
+                        "y": 12.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 42.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 162.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 192.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 122,
+                        "y": 12.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 122,
+                        "y": 42.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 122,
+                        "y": 162.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 122,
+                        "y": 192.5,
+                        "width": 24,
+                        "height": 5
+                    }
+                ]
+            },
+            {
+                "width": 194,
+                "height": 210,
+                "holes": [
+                    {
+                        "x": 8,
+                        "y": 12.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 42.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 162.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 8,
+                        "y": 192.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 158,
+                        "y": 12.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 158,
+                        "y": 42.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 158,
+                        "y": 162.5,
+                        "width": 24,
+                        "height": 5
+                    },
+                    {
+                        "x": 158,
+                        "y": 192.5,
+                        "width": 24,
+                        "height": 5
+                    }
+                ]
+            }
+        ]
+    }
+]
