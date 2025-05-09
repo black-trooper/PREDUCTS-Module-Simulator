@@ -13,6 +13,21 @@
     />
 
     <script defer src="/build/bundle.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-2GK0Q38L66"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-2GK0Q38L66", {
+        cookie_flags: "SameSite=None;Secure",
+        cookie_domain: "auto",
+      });
+    </script>
   </head>
 
   <body></body>
