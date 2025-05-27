@@ -73,7 +73,12 @@
   >
     <div class="module-container">
       <div class="module-content">
-        <div class="module-name">{module.name.replace("Mount for", "")}</div>
+        <div class="module-name">
+          {module.name
+            .replace("Mount for DASHBOARD", "")
+            .replace("for DASHBOARD", "")
+            .replace("Mount for", "")}
+        </div>
 
         <div class="module-actions">
           {#if module.install.length > 1}
