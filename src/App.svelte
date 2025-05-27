@@ -4,7 +4,7 @@
   import DraggableArea from "./DraggableArea.svelte";
   import Module from "./Module.svelte";
 
-  const currentVersion = "0.1.6";
+  const currentVersion = "0.2.0";
 
   let moduleIdCounter = 0; // モジュールID用カウンター
   let deskOptions = [];
@@ -42,18 +42,106 @@
   const loadDeskOptions = async () => {
     try {
       const response = await fetch("/desks.json");
-      deskOptions = await response.json();
+      const rawDesks = await response.json();
+
+      deskOptions = rawDesks.map((desk) => {
+        const rails = expandRails(desk.railPattern);
+        const holes = expandHoles(desk.holePattern || []);
+        const beams = expandBeams(desk.beamPattern || []);
+
+        return {
+          ...desk,
+          rails,
+          holes,
+          beams,
+        };
+      });
     } catch (error) {
       console.error("データの読み込みに失敗しました", error);
     }
   };
+
+  const expandRails = (pattern) => {
+    if (!pattern) return [];
+
+    const stepY = pattern.steps.y || [];
+    const rows = stepY.length + 1;
+
+    const rails = [];
+
+    for (let row = 0; row < rows; row++) {
+      const y =
+        pattern.origin.y + stepY.slice(0, row).reduce((a, v) => a + v, 0);
+      rails.push({
+        x: pattern.origin.x,
+        y,
+        length: pattern.length,
+      });
+    }
+    return rails;
+  };
+
+  const expandHoles = (patterns) => {
+    const holes = [];
+
+    patterns.forEach((pattern) => {
+      const steps = pattern.steps || {};
+      const stepX = steps.x || [];
+      const stepY = steps.y || [];
+
+      const cols = stepX.length + 1;
+      const rows = stepY.length + 1;
+      for (let row = 0; row < rows; row++) {
+        const y =
+          pattern.origin.y + stepY.slice(0, row).reduce((a, v) => a + v, 0);
+
+        for (let col = 0; col < cols; col++) {
+          const x =
+            pattern.origin.x + stepX.slice(0, col).reduce((a, v) => a + v, 0);
+
+          holes.push({
+            x,
+            y,
+            diameter: pattern.diameter,
+          });
+        }
+      }
+    });
+    return holes;
+  };
+
+  const expandBeams = (patterns) => {
+    if (!Array.isArray(patterns)) return [];
+
+    return patterns.flatMap((pattern) => {
+      const xArray = Array.isArray(pattern.x) ? pattern.x : [pattern.x];
+      return xArray.map((xVal) => ({
+        x: xVal,
+        y: pattern.y,
+        length: pattern.length,
+        height: pattern.height,
+      }));
+    });
+  };
+
   const loadModules = async () => {
     try {
       const response = await fetch("/modules.json?v=" + currentVersion);
       if (!response.ok) {
         throw new Error("モジュールのデータの取得に失敗しました");
       }
-      modules = (await response.json()).map((module) => {
+
+      const rawModules = await response.json();
+      // holeGrid を holes に展開
+      for (const module of rawModules) {
+        for (const install of module.install) {
+          if (install.holeGrid) {
+            install.holes = expandHoleGrid(install.holeGrid);
+            delete install.holeGrid; // 不要なら削除
+          }
+        }
+      }
+      modules = rawModules.map((module) => {
         module = {
           ...module,
           width: module.install[0].width,
@@ -66,6 +154,37 @@
     } catch (error) {
       console.error("エラー:", error);
     }
+  };
+
+  const expandHoleGrid = (holeGrid) => {
+    const origin = holeGrid.origin;
+    const size = holeGrid.size;
+    const steps = holeGrid.steps || {};
+
+    const stepX = steps.x || [];
+    const stepY = steps.y || [];
+
+    const cols = stepX.length + 1;
+    const rows = stepY.length + 1;
+
+    const holes = [];
+
+    for (let row = 0; row < rows; row++) {
+      const y = origin.y + stepY.slice(0, row).reduce((a, v) => a + v, 0);
+
+      for (let col = 0; col < cols; col++) {
+        const x = origin.x + stepX.slice(0, col).reduce((a, v) => a + v, 0);
+
+        holes.push({
+          x,
+          y,
+          width: size.width,
+          height: size.height,
+        });
+      }
+    }
+
+    return holes;
   };
 
   // デスク選択

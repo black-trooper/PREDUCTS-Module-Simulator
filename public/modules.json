@@ -8,50 +8,43 @@
             {
                 "width": 960,
                 "height": 85,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 230,
-                        "y": -30,
-                        "width": 9,
-                        "height": 6
+                        "y": -30
                     },
-                    {
-                        "x": 650,
-                        "y": -30,
-                        "width": 9,
-                        "height": 6
+                    "steps": {
+                        "x": [
+                            420
+                        ],
+                        "y": [
+                            150
+                        ]
                     },
-                    {
-                        "x": 230,
-                        "y": 120,
-                        "width": 9,
-                        "height": 6
-                    },
-                    {
-                        "x": 650,
-                        "y": 120,
+                    "size": {
                         "width": 9,
                         "height": 6
                     }
-                ]
+                }
             },
             {
                 "width": 960,
                 "height": 85,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 230,
-                        "y": 36,
-                        "width": 9,
-                        "height": 6
+                        "y": 36
                     },
-                    {
-                        "x": 650,
-                        "y": 36,
+                    "steps": {
+                        "x": [
+                            420
+                        ]
+                    },
+                    "size": {
                         "width": 9,
                         "height": 6
                     }
-                ]
+                }
             }
         ]
     },
@@ -63,32 +56,24 @@
             {
                 "width": 428,
                 "height": 237,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 10,
-                        "y": 45,
-                        "width": 15,
-                        "height": 5
+                        "y": 45
                     },
-                    {
-                        "x": 408,
-                        "y": 45,
-                        "width": 15,
-                        "height": 5
+                    "steps": {
+                        "x": [
+                            398
+                        ],
+                        "y": [
+                            150
+                        ]
                     },
-                    {
-                        "x": 10,
-                        "y": 195,
-                        "width": 15,
-                        "height": 5
-                    },
-                    {
-                        "x": 408,
-                        "y": 195,
+                    "size": {
                         "width": 15,
                         "height": 5
                     }
-                ]
+                }
             }
         ]
     },
@@ -101,62 +86,46 @@
             {
                 "width": 486,
                 "height": 271,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 10,
-                        "y": 65,
-                        "width": 6,
-                        "height": 50
+                        "y": 65
                     },
-                    {
-                        "x": 466,
-                        "y": 65,
-                        "width": 6,
-                        "height": 50
+                    "steps": {
+                        "x": [
+                            456
+                        ],
+                        "y": [
+                            150
+                        ]
                     },
-                    {
-                        "x": 10,
-                        "y": 215,
-                        "width": 6,
-                        "height": 50
-                    },
-                    {
-                        "x": 466,
-                        "y": 215,
+                    "size": {
                         "width": 6,
                         "height": 50
                     }
-                ]
+                }
             },
             {
                 "width": 412,
                 "height": 271,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 28,
-                        "y": 65,
-                        "width": 6,
-                        "height": 50
+                        "y": 65
                     },
-                    {
-                        "x": 380,
-                        "y": 65,
-                        "width": 6,
-                        "height": 50
+                    "steps": {
+                        "x": [
+                            352
+                        ],
+                        "y": [
+                            150
+                        ]
                     },
-                    {
-                        "x": 28,
-                        "y": 215,
-                        "width": 6,
-                        "height": 50
-                    },
-                    {
-                        "x": 380,
-                        "y": 215,
+                    "size": {
                         "width": 6,
                         "height": 50
                     }
-                ]
+                }
             }
         ]
     },
@@ -169,32 +138,24 @@
             {
                 "width": 203,
                 "height": 203,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 23,
-                        "y": 6,
-                        "width": 6,
-                        "height": 40
+                        "y": 6
                     },
-                    {
-                        "x": 173,
-                        "y": 6,
-                        "width": 6,
-                        "height": 40
+                    "steps": {
+                        "x": [
+                            150
+                        ],
+                        "y": [
+                            150
+                        ]
                     },
-                    {
-                        "x": 23,
-                        "y": 156,
-                        "width": 6,
-                        "height": 40
-                    },
-                    {
-                        "x": 173,
-                        "y": 156,
+                    "size": {
                         "width": 6,
                         "height": 40
                     }
-                ]
+                }
             }
         ]
     },
@@ -206,20 +167,21 @@
             {
                 "width": 131,
                 "height": 127,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 9,
-                        "y": 18,
-                        "width": 6,
-                        "height": 89
+                        "y": 18
                     },
-                    {
-                        "x": 115,
-                        "y": 18,
+                    "steps": {
+                        "x": [
+                            106
+                        ]
+                    },
+                    "size": {
                         "width": 6,
                         "height": 89
                     }
-                ]
+                }
             }
         ]
     },
@@ -232,20 +194,21 @@
             {
                 "width": 55.7,
                 "height": 214,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 8,
-                        "y": 12,
-                        "width": 6,
-                        "height": 40
+                        "y": 12
                     },
-                    {
-                        "x": 8,
-                        "y": 162,
+                    "steps": {
+                        "y": [
+                            150
+                        ]
+                    },
+                    "size": {
                         "width": 6,
                         "height": 40
                     }
-                ]
+                }
             }
         ]
     },
@@ -259,164 +222,74 @@
             {
                 "width": 118,
                 "height": 210,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 8,
-                        "y": 12.5,
-                        "width": 24,
-                        "height": 5
+                        "y": 12.5
                     },
-                    {
-                        "x": 8,
-                        "y": 42.5,
-                        "width": 24,
-                        "height": 5
+                    "steps": {
+                        "x": [
+                            80
+                        ],
+                        "y": [
+                            30,
+                            120,
+                            30
+                        ]
                     },
-                    {
-                        "x": 8,
-                        "y": 162.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 8,
-                        "y": 192.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 88,
-                        "y": 12.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 88,
-                        "y": 42.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 88,
-                        "y": 162.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 88,
-                        "y": 192.5,
+                    "size": {
                         "width": 24,
                         "height": 5
                     }
-                ]
+                }
             },
             {
                 "width": 156,
                 "height": 210,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 8,
-                        "y": 12.5,
-                        "width": 24,
-                        "height": 5
+                        "y": 12.5
                     },
-                    {
-                        "x": 8,
-                        "y": 42.5,
-                        "width": 24,
-                        "height": 5
+                    "steps": {
+                        "x": [
+                            114
+                        ],
+                        "y": [
+                            30,
+                            120,
+                            30
+                        ]
                     },
-                    {
-                        "x": 8,
-                        "y": 162.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 8,
-                        "y": 192.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 122,
-                        "y": 12.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 122,
-                        "y": 42.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 122,
-                        "y": 162.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 122,
-                        "y": 192.5,
+                    "size": {
                         "width": 24,
                         "height": 5
                     }
-                ]
+                }
             },
             {
                 "width": 194,
                 "height": 210,
-                "holes": [
-                    {
+                "holeGrid": {
+                    "origin": {
                         "x": 8,
-                        "y": 12.5,
-                        "width": 24,
-                        "height": 5
+                        "y": 12.5
                     },
-                    {
-                        "x": 8,
-                        "y": 42.5,
-                        "width": 24,
-                        "height": 5
+                    "steps": {
+                        "x": [
+                            150
+                        ],
+                        "y": [
+                            30,
+                            120,
+                            30
+                        ]
                     },
-                    {
-                        "x": 8,
-                        "y": 162.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 8,
-                        "y": 192.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 158,
-                        "y": 12.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 158,
-                        "y": 42.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 158,
-                        "y": 162.5,
-                        "width": 24,
-                        "height": 5
-                    },
-                    {
-                        "x": 158,
-                        "y": 192.5,
+                    "size": {
                         "width": 24,
                         "height": 5
                     }
-                ]
+                }
             }
         ]
     }
