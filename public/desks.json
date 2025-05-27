@@ -445,5 +445,94 @@
                 "height": 580
             }
         ]
+    },
+    {
+        "id": "DASHBOARD-100",
+        "name": "DASHBOARD - 100",
+        "type": "dashboard",
+        "width": 1000,
+        "height": 230,
+        "railPattern": {
+            "origin": {
+                "x": 55,
+                "y": 40
+            },
+            "steps": {
+                "y": [
+                    150
+                ]
+            },
+            "length": 890
+        },
+        "holePattern": [
+            {
+                "origin": {
+                    "x": 30,
+                    "y": 40
+                },
+                "steps": {
+                    "x": [
+                        940
+                    ],
+                    "y": [
+                        75,
+                        75
+                    ]
+                },
+                "diameter": 5
+            }
+        ]
+    },
+    {
+        "id": "DASHBOARD-120",
+        "name": "DASHBOARD - 120",
+        "type": "dashboard",
+        "width": 1200,
+        "height": 230,
+        "railPattern": {
+            "origin": {
+                "x": 95,
+                "y": 40
+            },
+            "steps": {
+                "y": [
+                    150
+                ]
+            },
+            "length": 1010
+        },
+        "holePattern": [
+            {
+                "origin": {
+                    "x": 30,
+                    "y": 40
+                },
+                "steps": {
+                    "x": [
+                        1140
+                    ],
+                    "y": [
+                        75,
+                        75
+                    ]
+                },
+                "diameter": 5
+            },
+            {
+                "origin": {
+                    "x": 70,
+                    "y": 40
+                },
+                "steps": {
+                    "x": [
+                        1060
+                    ],
+                    "y": [
+                        150
+                    ]
+                },
+                "diameter": 5
+            }
+        ]
     }
 ]

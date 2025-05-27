@@ -532,7 +532,7 @@
       <div class="category">
         <h4>Module / Hanger</h4>
         <div class="module-buttons">
-          {#each modules.filter((module) => module.type === "mount") as mountModule}
+          {#each modules.filter((module) => module.type === "mount" && module[selectedDesk.type]) as mountModule}
             <button on:click={() => placeModule(mountModule.id)}>
               {mountModule.name}
             </button>
@@ -543,7 +543,7 @@
       <div class="category">
         <h4>Tray / Drawer</h4>
         <div class="module-buttons">
-          {#each modules.filter((module) => module.type === "tray") as trayModule}
+          {#each modules.filter((module) => module.type === "tray" && module[selectedDesk.type]) as trayModule}
             <button on:click={() => placeModule(trayModule.id)}>
               {trayModule.name}
             </button>

@@ -3,6 +3,7 @@
         "id": "mesh-cable-holder",
         "name": "Mesh Cable Holder",
         "type": "tray",
+        "desk": true,
         "rotate": false,
         "install": [
             {
@@ -52,6 +53,7 @@
         "id": "drawer-mini",
         "name": "Drawer Mini",
         "type": "tray",
+        "desk": true,
         "install": [
             {
                 "width": 428,
@@ -81,6 +83,7 @@
         "id": "drawer-three",
         "name": "Drawer Three",
         "type": "tray",
+        "desk": true,
         "crossBeam": true,
         "install": [
             {
@@ -133,6 +136,7 @@
         "id": "mount-studio",
         "name": "Mount for Mac Studio",
         "type": "mount",
+        "desk": true,
         "rotate": 90,
         "install": [
             {
@@ -163,6 +167,8 @@
         "id": "mount-mac-mini2",
         "name": "Mount for Mac mini 2",
         "type": "mount",
+        "desk": true,
+        "dashboard": true,
         "install": [
             {
                 "width": 131,
@@ -189,6 +195,7 @@
         "id": "mount-switch",
         "name": "Mount for Switch",
         "type": "mount",
+        "desk": true,
         "rotate": 90,
         "install": [
             {
@@ -216,6 +223,7 @@
         "id": "mount-ps5",
         "name": "Mount for PS5",
         "type": "mount",
+        "desk": true,
         "rotate": 90,
         "crossBeam": true,
         "install": [
@@ -288,6 +296,93 @@
                     "size": {
                         "width": 24,
                         "height": 5
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "steel-leg",
+        "name": "Steel Leg",
+        "type": "mount",
+        "dashboard": true,
+        "install": [
+            {
+                "width": 30,
+                "height": 200,
+                "holeGrid": {
+                    "origin": {
+                        "x": 12,
+                        "y": 22
+                    },
+                    "steps": {
+                        "y": [
+                            150
+                        ]
+                    },
+                    "size": {
+                        "width": 6,
+                        "height": 6
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "system-tray",
+        "name": "System Tray",
+        "type": "tray",
+        "dashboard": true,
+        "install": [
+            {
+                "width": 357.4,
+                "height": 216.2,
+                "holeGrid": {
+                    "origin": {
+                        "x": 12,
+                        "y": 22
+                    },
+                    "steps": {
+                        "x": [
+                            328
+                        ],
+                        "y": [
+                            150
+                        ]
+                    },
+                    "size": {
+                        "width": 6,
+                        "height": 24
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "tray-m-dashboard",
+        "name": "Tray M for DASHBOARD",
+        "type": "tray",
+        "dashboard": true,
+        "install": [
+            {
+                "width": 432,
+                "height": 200,
+                "holeGrid": {
+                    "origin": {
+                        "x": 12,
+                        "y": 17
+                    },
+                    "steps": {
+                        "x": [
+                            402
+                        ],
+                        "y": [
+                            150
+                        ]
+                    },
+                    "size": {
+                        "width": 6,
+                        "height": 24
                     }
                 }
             }
