@@ -329,7 +329,7 @@
         ]
     },
     {
-        "id": "system-tray",
+        "id": "db-system-tray",
         "name": "System Tray",
         "type": "tray",
         "dashboard": true,
@@ -359,7 +359,7 @@
         ]
     },
     {
-        "id": "tray-m-dashboard",
+        "id": "db-tray-m",
         "name": "Tray M for DASHBOARD",
         "type": "tray",
         "dashboard": true,
@@ -383,6 +383,34 @@
                     "size": {
                         "width": 6,
                         "height": 24
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "db-switch-mount",
+        "name": "Switch Mount for DASHBOARD",
+        "type": "mount",
+        "dashboard": true,
+        "rotate": 90,
+        "install": [
+            {
+                "width": 108.1,
+                "height": 180.2,
+                "holeGrid": {
+                    "origin": {
+                        "x": 12,
+                        "y": 12
+                    },
+                    "steps": {
+                        "y": [
+                            150
+                        ]
+                    },
+                    "size": {
+                        "width": 24,
+                        "height": 6
                     }
                 }
             }
