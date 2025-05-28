@@ -510,14 +510,19 @@
           {#each selectedDesk.rails as rail}
             <div
               class="rail"
-              style="top: {rail.y}px; left: {rail.x}px; width: {rail.length}px;"
+              style=" top: {rail.y - 2.5}px;
+                      left: {rail.x}px;
+                      width: {rail.length}px;"
             ></div>
           {/each}
           <!-- デスクのネジ穴を表示 -->
           {#each selectedDesk.holes as hole}
             <div
               class="hole"
-              style="top: {hole.y}px; left: {hole.x}px; width: {hole.diameter}px; height: {hole.diameter}px;"
+              style=" top: {hole.y - hole.diameter / 2}px;
+                      left: {hole.x - hole.diameter / 2}px;
+                      width: {hole.diameter}px;
+                      height: {hole.diameter}px;"
             ></div>
           {/each}
           <!-- デスクのビームを表示 -->

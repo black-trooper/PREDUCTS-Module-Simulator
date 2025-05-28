@@ -113,8 +113,8 @@
       <div
         class="hole"
         style="
-        top: {hole.y}px;
-        left: {hole.x}px;
+        top: {hole.y - Math.min(hole.width, hole.height) / 2}px;
+        left: {hole.x - Math.min(hole.width, hole.height) / 2}px;
         width: {hole.width}px;
         height: {hole.height}px;
       "
