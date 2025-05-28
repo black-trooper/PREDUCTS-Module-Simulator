@@ -17,7 +17,7 @@
   let item;
   const position = { x: parseInt(x), y: parseInt(y) }; // 要素の位置
   const diff = { x: 0, y: 0 }; // ドラッグ開始時の要素の位置とマウスの位置の差
-  const areaMargin = 20;
+  const areaMargin = 60;
   let isCatched = false;
 
   function handleMove(event) {

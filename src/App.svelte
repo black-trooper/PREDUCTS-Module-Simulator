@@ -13,6 +13,8 @@
   let placedModules = [];
   let localStorageKey = "PreductsSimulator";
   let scale = 1;
+  let paddingWidth = 20;
+  let paddingHeight = 13;
 
   // 現在のアプリバージョン
 
@@ -30,8 +32,20 @@
   const calculateScale = () => {
     // 挙動不審なので一旦無効
     if (!selectedDesk) return;
+    // デスクとダッシュボードに応じたpaddingを設定
+    if (selectedDesk.type == "desk") {
+      paddingWidth = 20;
+      paddingHeight = 13;
+    } else {
+      paddingWidth = 60;
+      paddingHeight = 50;
+    }
+    const maxWidth = 1200 - (paddingWidth + 1) * 2;
+    const marginWidth = paddingWidth * 2 + 17;
     const screenWidth =
-      window.innerWidth - 57 < 1158 ? window.innerWidth - 57 : 1158; // 1200 - (padding + border) x 2
+      window.innerWidth - marginWidth < maxWidth
+        ? window.innerWidth - marginWidth
+        : maxWidth;
     const screenHeight = window.innerHeight;
     const scaleX = screenWidth / selectedDesk.width;
     const scaleY = screenHeight / selectedDesk.height;
@@ -478,7 +492,8 @@
       </div>
     </div>
     <div
-      style="padding:13px 20px;height:{selectedDesk.height * scale +
+      style="padding:{paddingHeight}px {paddingWidth}px;height:{selectedDesk.height *
+        scale +
         20}px;overflow:visible;"
     >
       <DraggableArea>
