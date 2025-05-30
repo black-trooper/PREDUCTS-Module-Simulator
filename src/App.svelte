@@ -134,6 +134,7 @@
         y: pattern.y,
         length: pattern.length,
         height: pattern.height,
+        notCross: pattern.notCross,
       }));
     });
   };
@@ -322,11 +323,11 @@
     };
 
     return module.holes.every((hole, index) => {
-      // 8つの穴の場合は4隅のペアを作成
-      if (module.holes.length === 8) {
+      // 8つ以上の穴の場合はペアを作成
+      if (module.holes.length >= 8) {
         const closestPairs = getClosestHolePairs(module.holes);
 
-        // 4隅の穴がレールにヒットするかを判定
+        // ペアで分けた穴がレールにヒットするかを判定
         const hits = closestPairs.every((pair) => {
           return isValidForRails(pair.hole1) || isValidForRails(pair.hole2);
         });
@@ -357,23 +358,25 @@
 
   // ビームとの衝突判定
   const checkBeamCollision = (module) => {
-    if (module.crossBeam) {
-      return false;
-    }
-    // 複数のビームに対して判定
     for (let beam of selectedDesk.beams) {
-      // モジュールがビームの範囲と重なっているか判定
-      if (
+      const overlaps =
         module.x < beam.x + beam.length &&
         module.x + module.width > beam.x &&
         module.y < beam.y + beam.height &&
-        module.y + module.height > beam.y
-      ) {
-        return true; // ビームと衝突している
+        module.y + module.height > beam.y;
+
+      if (!overlaps) continue;
+
+      // crossBeam をまたげるが、notCross ビームならブロックする
+      if (module.crossBeam && !beam.notCross) {
+        continue; // 通過OK
       }
+
+      // それ以外は衝突として扱う
+      return true;
     }
 
-    return false; // ビームと衝突していない
+    return false; // 衝突なし
   };
 
   // 条件を統合してモジュールを検証

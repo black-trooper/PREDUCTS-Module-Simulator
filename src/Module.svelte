@@ -17,6 +17,13 @@
     updatePosition(index, event.detail);
   };
 
+  const extractTargetInstall = (install) => {
+    const targetInstall = install.filter((a) => {
+      return !a.target || a.target.includes(selectedDesk.id);
+    });
+    return targetInstall;
+  };
+
   const rotateModule = (radial, changeSize) => {
     if (!changeSize) {
       rotation = (rotation + radial) % 360;
@@ -40,11 +47,13 @@
   };
 
   const toggleModuleSize = () => {
-    currentSizeIndex = (currentSizeIndex + 1) % module.install.length; // 次のサイズインデックス
+    const targetInstall = extractTargetInstall(module.install);
+    currentSizeIndex = (currentSizeIndex + 1) % targetInstall.length; // 次のサイズインデックス
+
     // サイズを更新
-    module.width = module.install[currentSizeIndex].width;
-    module.height = module.install[currentSizeIndex].height;
-    module.holes = module.install[currentSizeIndex].holes;
+    module.width = targetInstall[currentSizeIndex].width;
+    module.height = targetInstall[currentSizeIndex].height;
+    module.holes = targetInstall[currentSizeIndex].holes;
 
     rotateModule(rotation, true);
 
@@ -81,7 +90,7 @@
         </div>
 
         <div class="module-actions">
-          {#if module.install.length > 1}
+          {#if extractTargetInstall(module.install).length > 1}
             <button
               class="rotate-btn"
               on:click={toggleModuleSize}
