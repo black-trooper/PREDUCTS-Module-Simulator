@@ -4,7 +4,7 @@
   import DraggableArea from "./DraggableArea.svelte";
   import Module from "./Module.svelte";
 
-  const currentVersion = "0.2.0";
+  const currentVersion = "0.3.0";
 
   let moduleIdCounter = 0; // モジュールID用カウンター
   let deskOptions = [];

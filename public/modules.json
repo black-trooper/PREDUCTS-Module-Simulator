@@ -224,6 +224,33 @@
                 }
             },
             {
+                "target": [
+                    "DESK-E7H-14075",
+                    "DESK-E7H-16075",
+                    "DESK-E7H-18075"
+                ],
+                "width": 960,
+                "height": 85,
+                "holeGrid": {
+                    "origin": {
+                        "x": 260,
+                        "y": -18
+                    },
+                    "steps": {
+                        "x": [
+                            420
+                        ],
+                        "y": [
+                            120
+                        ]
+                    },
+                    "size": {
+                        "width": 9,
+                        "height": 6
+                    }
+                }
+            },
+            {
                 "width": 960,
                 "height": 85,
                 "holeGrid": {
